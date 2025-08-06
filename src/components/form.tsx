@@ -10,7 +10,7 @@ interface Props {
 const FormControl: React.FC<Props> = ({ submit, update, editStudent }) => {
   const [form, setForm] = useState<Omit<Student, "id">>({
     name: "",
-    age: 0,
+    age: "",
   });
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const FormControl: React.FC<Props> = ({ submit, update, editStudent }) => {
       submit(form);
     }
 
-    setForm({ name: "", age: 0});
+    setForm({ name: "", age: ""});
   };
 
   return (

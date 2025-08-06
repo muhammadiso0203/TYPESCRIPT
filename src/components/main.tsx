@@ -5,7 +5,7 @@ import StudentView from './studentView';
 export interface Student {
   id: number;
   name: string;
-  age: number;
+  age: number | string;
 }
 
 const Main: React.FC = () => {
