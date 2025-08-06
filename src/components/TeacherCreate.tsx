@@ -16,6 +16,8 @@ interface Props {
 
 const TeacherCreate: FC<Props> = ({ setData, editingItem, setEditingItem }) => {
   const [fullName, setFullName] = useState("");
+  const [age, setAge] = useState("");
+  const [addres, setAddres] = useState("");
   const [profession, setProfession] = useState("");
   const [salary, setSalary] = useState("");
 
@@ -32,7 +34,9 @@ const TeacherCreate: FC<Props> = ({ setData, editingItem, setEditingItem }) => {
     if (editingItem) {
       setData((prev) => {
         return prev.map((teacher) =>
-          teacher.id == editingItem.id ? { ...teacher, fullName, profession, salary } : teacher
+          teacher.id == editingItem.id
+            ? { ...teacher, fullName, profession, salary }
+            : teacher
         );
       });
       setEditingItem(null);
@@ -40,25 +44,47 @@ const TeacherCreate: FC<Props> = ({ setData, editingItem, setEditingItem }) => {
       let newTeacher: ITeacher = {
         id: Date.now(),
         fullName,
+        age:Number(age),
+        addres,
         profession,
         salary,
       };
       setData((prev) => [...prev, newTeacher]);
     }
-    setFullName("")
-    setProfession("")
-    setSalary("")
+    setFullName("");
+    setProfession("");
+    setSalary("");
   };
 
   return (
     <div>
-      <form action="" onSubmit={handleSubmit} className="container mx-auto flex justify-center mt-10 gap-23">
+      <form
+        action=""
+        onSubmit={handleSubmit}
+        className="container mx-auto flex justify-center mt-10 gap-2.5"
+      >
         <input
           required
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
           type="text"
           placeholder="Fullname"
+          className="border rounded-[8px] p-2"
+        />
+        <input
+          required
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+          type="text"
+          placeholder="Age"
+          className="border rounded-[8px] p-2"
+        />
+        <input
+          required
+          value={addres}
+          onChange={(e) => setAddres(e.target.value)}
+          type="text"
+          placeholder="Addres"
           className="border rounded-[8px] p-2"
         />
         <input
@@ -77,7 +103,9 @@ const TeacherCreate: FC<Props> = ({ setData, editingItem, setEditingItem }) => {
           placeholder="salary"
           className="border rounded-[8px] p-2"
         />
-        <button className="border rounded-[8px] p-2 w-40 bg-blue-500 text-white text-[18px]">Submit</button>
+        <button className="border rounded-[8px] p-2 w-40 bg-blue-500 text-white text-[18px]">
+          Submit
+        </button>
       </form>
     </div>
   );

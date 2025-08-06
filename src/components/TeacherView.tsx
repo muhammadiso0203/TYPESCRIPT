@@ -11,7 +11,7 @@ interface Props {
 const TeacherView: FC<Props> = ({ data, onDelete, setEditingItem }) => {
 
   return (
-    <table className=" container mx-auto table-auto border w-[1100px] mt-10">
+    <table className=" container mx-auto table-auto border w-[1330px] mt-10">
       <thead className="text-center bg-gray-100">
         <tr>
           <th className="border px-4 py-2">#</th>
