@@ -54,6 +54,8 @@ const TeacherCreate: FC<Props> = ({ setData, editingItem, setEditingItem }) => {
     setFullName("");
     setProfession("");
     setSalary("");
+    setAge("");
+    setAddres(""); 
   };
 
   return (
