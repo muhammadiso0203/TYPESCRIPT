@@ -82,108 +82,103 @@ const MainRouters = () => {
       {useRoutes([
         {
           path: "/",
+          element: <Dashboard />,
           children: [
             {
-              path: "dashboard",
-              element: <Dashboard />,
+              path: "",
+              element: <Statistic />,
               children: [
-                {
-                  path: "/dashboard",
-                  element: <Statistic />,
-                  children: [
-                    { index: true, element: <Statistics /> },
-                    { path: "viewStatistic", element: <ViewStatistic /> },
-                  ],
-                },
-                {
-                  path: "courses",
-                  element: <Course />,
-                  children: [
-                    { index: true, element: <Cources /> },
-                    { path: "addCourses", element: <AddCourse /> },
-                    { path: "courseMaterials", element: <CourseMaterials /> },
-                  ],
-                },
-                {
-                  path: "exam",
-                  element: <Exam />,
-                  children: [
-                    { index: true, element: <Exams /> },
-                    { path: "addExam", element: <AddExam /> },
-                    { path: "endExam", element: <EndExam /> },
-                  ],
-                },
-                {
-                  path: "feedback",
-                  element: <Feedback />,
-                  children: [
-                    { index: true, element: <Feedbacks /> },
-                    { path: "addFeedback", element: <AddFeedback /> },
-                    { path: "removeFeedback", element: <RemoveFeedback /> },
-                  ],
-                },
-                {
-                  path: "library",
-                  element: <Library />,
-                  children: [
-                    { index: true, element: <Librarian /> },
-                    { path: "addBook", element: <Addbook /> },
-                    { path: "removeBook", element: <RemoveBook /> },
-                  ],
-                },
-                {
-                  path: "notification",
-                  element: <Notification />,
-                  children: [
-                    { index: true, element: <Notifications /> },
-                    { path: "sendNotification", element: <SendNotification /> },
-                  ],
-                },
-                {
-                  path: "payment",
-                  element: <Payment />,
-                  children: [
-                    { index: true, element: <Payments /> },
-                    { path: "addPayment", element: <AddPayment /> },
-                    { path: "paymentHistory", element: <PaymentHistory /> },
-                  ],
-                },
-                {
-                  path: "profile",
-                  element: <Profile />,
-                  children: [
-                    { index: true, element: <Profiles /> },
-                    { path: "name", element: <Name /> },
-                    { path: "email", element: <Email /> },
-                  ],
-                },
-                {
-                  path: "reports",
-                  element: <Reports />,
-                  children: [
-                    { index: true, element: <Report /> },
-                    { path: "addReport", element: <AddReport /> },
-                    { path: "removeReport", element: <RemoveReport /> },
-                  ],
-                },
-                {
-                  path: "students",
-                  element: <Students />,
-                  children: [
-                    { index: true, element: <Student /> },
-                    { path: "addStudent", element: <AddStudent /> },
-                    { path: "removeStudent", element: <RemoveStudent /> },
-                  ],
-                },
-                {
-                  path: "teacher",
-                  element: <Teacher />,
-                  children: [
-                    { index: true, element: <Teachers /> },
-                    { path: "addTeacher", element: <AddTeacher /> },
-                    { path: "removeTeacher", element: <RemoveTeacher /> },
-                  ],
-                },
+                { index: true, element: <Statistics /> },
+                { path: "viewStatistic", element: <ViewStatistic /> },
+              ],
+            },
+            {
+              path: "courses",
+              element: <Course />,
+              children: [
+                { index: true, element: <Cources /> },
+                { path: "addCourses", element: <AddCourse /> },
+                { path: "courseMaterials", element: <CourseMaterials /> },
+              ],
+            },
+            {
+              path: "exam",
+              element: <Exam />,
+              children: [
+                { index: true, element: <Exams /> },
+                { path: "addExam", element: <AddExam /> },
+                { path: "endExam", element: <EndExam /> },
+              ],
+            },
+            {
+              path: "feedback",
+              element: <Feedback />,
+              children: [
+                { index: true, element: <Feedbacks /> },
+                { path: "addFeedback", element: <AddFeedback /> },
+                { path: "removeFeedback", element: <RemoveFeedback /> },
+              ],
+            },
+            {
+              path: "library",
+              element: <Library />,
+              children: [
+                { index: true, element: <Librarian /> },
+                { path: "addBook", element: <Addbook /> },
+                { path: "removeBook", element: <RemoveBook /> },
+              ],
+            },
+            {
+              path: "notification",
+              element: <Notification />,
+              children: [
+                { index: true, element: <Notifications /> },
+                { path: "sendNotification", element: <SendNotification /> },
+              ],
+            },
+            {
+              path: "payment",
+              element: <Payment />,
+              children: [
+                { index: true, element: <Payments /> },
+                { path: "addPayment", element: <AddPayment /> },
+                { path: "paymentHistory", element: <PaymentHistory /> },
+              ],
+            },
+            {
+              path: "profile",
+              element: <Profile />,
+              children: [
+                { index: true, element: <Profiles /> },
+                { path: "name", element: <Name /> },
+                { path: "email", element: <Email /> },
+              ],
+            },
+            {
+              path: "reports",
+              element: <Reports />,
+              children: [
+                { index: true, element: <Report /> },
+                { path: "addReport", element: <AddReport /> },
+                { path: "removeReport", element: <RemoveReport /> },
+              ],
+            },
+            {
+              path: "students",
+              element: <Students />,
+              children: [
+                { index: true, element: <Student /> },
+                { path: "addStudent", element: <AddStudent /> },
+                { path: "removeStudent", element: <RemoveStudent /> },
+              ],
+            },
+            {
+              path: "teacher",
+              element: <Teacher />,
+              children: [
+                { index: true, element: <Teachers /> },
+                { path: "addTeacher", element: <AddTeacher /> },
+                { path: "removeTeacher", element: <RemoveTeacher /> },
               ],
             },
           ],
