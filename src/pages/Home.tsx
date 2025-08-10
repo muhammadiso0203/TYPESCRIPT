@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { IUser } from "../types";
 import { useDispatch, useSelector } from "react-redux";
 import { create, update, editing } from "../lib/features/userControl";

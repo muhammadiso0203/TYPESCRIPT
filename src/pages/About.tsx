@@ -72,7 +72,7 @@ const About = () => {
                     </button>
                     <button
                       className="p-2 rounded-full bg-red-100 hover:bg-red-200 transition"
-                      onClick={() => handleDelete(user.id)}
+                      onClick={() => handleDelete(Number(user.id))}
                     >
                       <FaTrash className="text-red-600 text-xl" />
                     </button>
