@@ -1,0 +1,11 @@
+@import "tailwindcss";
+.container{
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.liked svg {
+  fill: #8967f0;
+  stroke: #8967f0;
+}
