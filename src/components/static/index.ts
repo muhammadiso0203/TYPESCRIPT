@@ -1,12 +1,13 @@
 import img from "../../assets/t_product_540_high.jpg.png";
 import img1 from "../../assets/t_product_540_high.jpg (1).png";
 import star from "../../assets/Vector (8).svg";
+
 export const Product = [
   {
     id: 1,
     image: img,
-    price: "38 940",
-    price_del: "40 000",
+    price: 38940,
+    price_del: 40000,
     month: "1 560 so`m oyiga",
     title:
       "Kungaboqar yog'i Oila tanlovi, tozalangan va xidsizlantirilgan, 90…",
@@ -18,8 +19,8 @@ export const Product = [
   {
     id: 2,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
@@ -30,8 +31,8 @@ export const Product = [
   {
     id: 3,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
@@ -42,8 +43,8 @@ export const Product = [
   {
     id: 4,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
@@ -54,8 +55,8 @@ export const Product = [
   {
     id: 5,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
@@ -66,8 +67,8 @@ export const Product = [
   {
     id: 6,
     image: img,
-    price: "38 940",
-    price_del: "40 000",
+    price: 38940,
+    price_del: 40000,
     month: "1 560 so`m oyiga",
     title:
       "Kungaboqar yog'i Oila tanlovi, tozalangan va xidsizlantirilgan, 90…",
@@ -79,8 +80,8 @@ export const Product = [
   {
     id: 7,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
@@ -91,8 +92,8 @@ export const Product = [
   {
     id: 8,
     image: img1,
-    price: "2 999 400",
-    price_del: "3 400 000",
+    price: 2999400,
+    price_del: 3400000,
     month: "299 900 so`m oyiga",
     title: "Smartfon Xiaomi Redmi Note 13 6/128 GB, 8/128 GB, 8/256GB,…",
     yulduz: star,
