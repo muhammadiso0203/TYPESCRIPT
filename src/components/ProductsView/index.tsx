@@ -7,7 +7,7 @@ interface Props {
   data: IRecipes[] | undefined;
 }
 
-const RecipesView: FC<Props> = ({ name, data }) => {
+const RecipesView: FC<Props> = ({ data }) => {
   const wrapperClass = `grid grid-cols-5 gap-3`;
   return (
     <div className="container mx-auto">
